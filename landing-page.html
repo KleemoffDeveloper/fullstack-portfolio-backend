@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spider-Verse API</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Saira&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Saira", sans-serif;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        text-shadow: 1px 1px 10px white;
+        color: white;
+      }
+
+      header {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: linear-gradient(to bottom, #7f167f, #99feff);
+        width: 100%;
+      }
+
+      h1 {
+        font-size: clamp(20px, 4vw, 56px);
+      }
+
+      section {
+        background: linear-gradient(to top, #7f167f, #99feff);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+      }
+
+      #footer {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+      }
+
+      a {
+        text-shadow: none;
+        color: #99feff;
+      }
+
+      #logo {
+        width: clamp(300px, 4vw, 600px);
+        transition: 0.3s;
+      }
+
+      #logo:hover {
+        width: clamp(400px, 4vw, 700px);
+        transition: 0.3s;
+      }
+    </style>
+    <header>
+      <h1>Welcome to the Spider-Verse API</h1>
+      <p>View all characters in JSON format <a href="#">here</a>.</p>
+    </header>
+    <section>
+      <img
+        id="logo"
+        src="https://raw.githubusercontent.com/KleemoffDeveloper/fullstack-portfolio-frontend/main/public/Spider-Verse%20logo.png"
+      />
+      <p id="footer">
+        This is a fanmade API created by
+        <a href="https://github.com/KleemoffDeveloper" target="_blank"
+          >Silis Kleemoff</a
+        >.
+      </p>
+    </section>
+  </body>
+</html>
