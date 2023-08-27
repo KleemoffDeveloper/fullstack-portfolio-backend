@@ -14,4 +14,4 @@ CREATE TABLE characters (
  images TEXT[],
  first_appearance TEXT, -- first_appearance means the comic issue
  description TEXT
- );  
+ );
