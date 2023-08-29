@@ -15,3 +15,11 @@ CREATE TABLE characters (
  first_appearance TEXT, -- first_appearance means the comic issue
  description TEXT
  );
+
+ DROP TABLE IF EXISTS image_gallery
+
+CREATE TABLE image_gallery (
+ id SERIAL PRIMARY KEY,
+ name TEXT NOT NULL,
+ image_url TEXT NOT NULL
+ );

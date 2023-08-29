@@ -11,6 +11,17 @@ const getAllCharacters = async () => {
     }
 }
 
+const getAllImages = async () => {
+    try {
+        const allImages = db.any('SELECT * FROM image_gallery')
+        return allImages;
+    }
+    catch (error) {
+        console.log(error)
+        return error;
+    }
+}
+
 const getCharacter = async (id) => {
     try {
         const oneCharacter = db.one('SELECT * FROM characters WHERE id=$1', [id])
@@ -60,6 +71,7 @@ const deleteCharacter = async (id) => {
 
 module.exports = {
     getAllCharacters,
+    getAllImages,
     getCharacter,
     createCharacter,
     updateCharacter,
